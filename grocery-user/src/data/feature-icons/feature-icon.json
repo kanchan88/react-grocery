@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/img/icon-img/fd.png",
+    "title": "Free Delivery",
+    "subtitle": "Free delivery on order above RS.2500"
+  },
+  {
+    "id": 2,
+    "image": "/assets/img/icon-img/support.png",
+    "title": "24/7 Support",
+    "subtitle": "We will answer your queries anytime"
+  },
+  {
+    "id": 3,
+    "image": "/assets/img/icon-img/refund.png",
+    "title": "Money Refund",
+    "subtitle": "We have Refund option with T&C"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/icon-img/discount.png",
+    "title": "Discount Coupons",
+    "subtitle": "Discount Coupon available for members"
+  }
+]

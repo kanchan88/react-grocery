@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/img/payment-icon/paypal.png",
+        "title":"PayPal"
+    },
+    {
+        "id": 2,
+        "image": "/assets/img/payment-icon/esewa.png",
+        "title":"E-Sewa"
+    },
+    {
+        "id": 3,
+        "image": "/assets/img/payment-icon/mastercard.png",
+        "title":"Master Card"
+    },
+    {
+        "id": 4,
+        "image": "/assets/img/payment-icon/khalti.png",
+        "title":"Khalti"
+    },
+    {
+        "id": 5,
+        "image": "/assets/img/payment-icon/imepay.png",
+        "title":"Ime Pay"
+    },
+    {
+        "id": 6,
+        "image": "/assets/img/payment-icon/bank.png",
+        "title":"Bank Transfer"
+    }
+]

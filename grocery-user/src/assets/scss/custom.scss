@@ -1,0 +1,278 @@
+.home__category {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0 1.5% 2%;
+}
+homecat__title {
+  text-align: center;
+  font-weight: 800 !important;
+}
+
+home__products {
+  background-color: white;
+}
+
+.payment-icons-details {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  width: 100%;
+  @media #{$xs-layout} {
+    margin-left: 25px;
+  }
+}
+
+.payment-wrap {
+  display: flex;
+  justify-content: flex-end;
+  .payment-icon {
+    flex: 0 0 75px;
+    img {
+      width: 100%;
+    }
+  }
+  &:hover .payment-icon img {
+    animation: 500ms ease-in-out 0s normal none 1 running tada;
+  }
+}
+
+.cake-form-wrapper {
+  margin-top: 2px;
+  .cake-form-container {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border: 1px solid gainsboro;
+    width: 75%;
+    text-align: left;
+    @media #{$lg-layout} {
+      width: 75%;
+    }
+    @media #{$xs-layout} {
+      width: 100%;
+    }
+    .cake-form {
+      margin-left: 5px;
+      form {
+        input {
+          background-color: transparent;
+          border: 1px solid #ebebeb;
+          color: #333;
+          font-size: 14px;
+          height: 25px;
+          margin-bottom: 10px;
+          padding: 0 5px;
+        }
+        input[type="checkbox"] {
+          height: 15px;
+          margin: 0;
+          position: relative;
+          top: 1px;
+          width: 17px;
+        }
+        .button-box {
+          .login-toggle-btn {
+            padding: 2px 0 4px;
+            label {
+              color: #242424;
+              font-size: 10px;
+              font-weight: 400;
+              @media #{$xs-layout} {
+                font-size: 9px;
+              }
+            }
+          }
+          button {
+            background-color: rgb(255, 240, 240);
+            border: medium none;
+            color: $theme-color;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1;
+            padding: 3px 10px;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+            &:hover {
+              background-color: $theme-color;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cake-weight {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .cart-plus-minus {
+      border: 1px solid #e8e8e8;
+      display: inline-block;
+      height: 60px;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      width: 80px;
+      .qtybutton {
+        color: #8f8f8f;
+        cursor: pointer;
+        float: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        transition: all 0.3s ease 0s;
+        width: 24px;
+        background: none;
+        border: none;
+      }
+      .dec.qtybutton {
+        height: 60px;
+        left: 0;
+        top: 0;
+      }
+      .inc.qtybutton {
+        height: 60px;
+        right: 0;
+        top: 0;
+      }
+      input.cart-plus-minus-box {
+        background: transparent none repeat scroll 0 0;
+        border: medium none;
+        color: #8f8f8f;
+        float: left;
+        font-size: 14px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 80px;
+      }
+    }
+  }
+}
+
+
+.payment-method{
+  .payment-lists{
+    font-weight: 500;
+    color: #212121;
+    font-size: 18px;
+  }
+  .paymentGroup {
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+
+    label {
+      padding: 12px 30px;
+      width: 100%;
+      display: block;
+      text-align: left;
+      color: #3C454C;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 200ms ease-in;
+      overflow: hidden;
+
+      &:before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        content: '';
+        background-color: $theme-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
+        transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &:after {
+        width: 20px;
+        height: 20px;
+        content: '';
+        border: 2px solid $theme-color;
+        background-color: #fff;
+       background-repeat: no-repeat;
+        background-position: 2px 3px;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 200ms ease-in;
+      }
+    }
+
+    input:checked ~ label {
+      color: #fff;
+
+      &:before {
+        transform: translate(-50%, -50%) scale3d(56, 56, 1);
+        opacity: 1;
+      }
+
+      &:after {
+        background-color: $yellow;
+        border-color: $white;
+      }
+    }
+
+    input {
+      width: 32px;
+      height: 32px;
+      order: 1;
+      z-index: 2;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      visibility: hidden;
+    }
+  }
+}
+
+.continue_pay{
+  text-align: center;
+}
+.esewa{
+  .esewa_form{
+    input{
+      background-color: $theme-color;
+      color: white;
+      padding-right:60%;
+      background-image: url(https://esewa.com.np/common/images/esewa_logo.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      width: 100%;
+    }
+  }
+}
+.khalti{
+  .khalti_button{
+    background-color: $theme-color;
+    color: white;
+    height:75px;
+    padding-right:60%;
+    background-image: url(http://blog.khalti.com/wp-content/uploads/2019/09/khalti-logo.png);
+    border:none;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:15%;
+    width: 100%;
+  }
+}
